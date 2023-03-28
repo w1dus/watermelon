@@ -1,0 +1,101 @@
+/* font */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Thin.woff') format('woff');
+}
+/*LINESeedKR*/
+@font-face {
+    font-family: "LINESeedKR";
+    font-weight: 300;
+    src: url("../fonts/LINESeedKR-Th.woff") format("woff");
+}
+@font-face {
+    font-family: "LINESeedKR";
+    font-weight: 600;
+    src: url("../fonts/LINESeedKR-Rg.woff") format("woff");
+}
+@font-face {
+    font-family: "LINESeedKR";
+    font-weight: 900;
+    src: url("../fonts/LINESeedKR-Bd.woff") format("woff");
+}
+
+/* size */
+@media screen and (max-width: 1250px) { } /* tablet */
+@media screen and (max-width: 650px) { } /* mobile */
+
+/* default */
+*{
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color : inherit;
+    box-sizing: border-box;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+body{ font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 16px; letter-spacing: -0.04em; }
+section{ display:block; }
+a{ color:inherit; }
+
+.inner{ width:1200px; margin:0 auto; }
+
+.paging_box{ padding:10px 0; display:flex; align-items: center; justify-content: center; }
+
+@media screen and (max-width: 1250px) { 
+    .inner{ width:100%; padding:0 10px; }
+} /* tablet */
+@media screen and (max-width: 650px) { 
+    .paging_box{ font-size: 13px; }
+} /* mobile */
