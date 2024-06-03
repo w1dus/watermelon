@@ -1,3 +1,61 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/Pretendard-SemiBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Thin.ttf') format('truetype');
+}
+
 
 /* size */
 @media screen and (max-width: 1250px) { } /* tablet */
@@ -14,7 +72,7 @@
     line-height: inherit;
 }
 
-body{ font-family: 'Noto Sans KR', sans-serif; font-weight:400; font-size: 16px; letter-spacing: -0.04em; }
+body{ font-family: 'Pretendard', sans-serif; font-weight:400; font-size: 16px; letter-spacing: -0.04em; }
 section{ display:block; }
 a{ color:inherit; }
 
@@ -22,19 +80,10 @@ a{ color:inherit; }
 
 .paging_box{ padding:10px 0; display:flex; align-items: center; justify-content: center; }
 
-select{
-	/*ios대응*/
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	padding-right: 30px;
-	/*화살표 배경 넣기*/
-	background: url('../img/common/selectArrow.svg') no-repeat right 10px center; /*화살표 select박스 오른쪽 중앙 배치,배경 흰색*/
-}
-
 @media screen and (max-width: 1250px) { 
     .inner{ width:100%; padding:0 10px; }
 } /* tablet */
 @media screen and (max-width: 650px) { 
     .paging_box{ font-size: 13px; }
 } /* mobile */
+
