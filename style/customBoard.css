@@ -212,13 +212,13 @@ textarea.ipt{ resize: none; height: 170px; }
 .formList .iptBox.radioIpt label input{ display: none; }
 .formList .iptBox.radioIpt label input + .text{ display: flex; gap: 4px; align-items: center; }
 .formList .iptBox.radioIpt label input + .text::before{ content:''; display: block; width: 20px; height: 20px; border: 1px solid #E4E4E4;  }
-.formList .iptBox.radioIpt label input:checked + .text::before{ background-image: url('../img/common/checkbox_icon.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; background-color: #FC504F; }
+.formList .iptBox.radioIpt label input:checked + .text::before{ background-image: url('../img/common/checkbox_icon.png'); background-size: %; background-repeat: no-repeat; background-position: center; background-color: #FC504F; }
 
 .agreeCheckDiv{ margin-top: 10px; display: flex; justify-content: flex-start; color: #7F7F7F; }
 .agreeCheckDiv label input[type="checkbox"]{ display: none; }
 .agreeCheckDiv label input[type="checkbox"] + .textBox{ display: flex; align-items: flex-start; gap: 4px; }
 .agreeCheckDiv label input[type="checkbox"] + .textBox::before{ flex-shrink: 0; content:''; display: block; flex-shrink: 0; border: 1px solid #7f7f7f; width:16px; height: 16px;  }
-.agreeCheckDiv label input[type="checkbox"]:checked + .textBox::before{ background-color: #fff; background-image: url('../img/main/applyArti/check_icon.png'); background-size: 120%; background-repeat: no-repeat; background-position: center; }
+.agreeCheckDiv label input[type="checkbox"]:checked + .textBox::before{ background-color: #fff; background-image: url('../img/common/checkbox_icon.png'); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 .agreeCheckDiv label .black{ color: #070707; cursor: pointer; }
 input[type="file"].ipt label input[type="checkbox"]{ display: none;  }
 .checkIpt{ margin-top: 10px; display: flex; justify-content: flex-start; }
@@ -229,7 +229,7 @@ input[type="file"].ipt label input[type="checkbox"]{ display: none;  }
 .checkIpt input[type="checkbox"] + .text::before{ content:''; display: block; width: 18px; height: 18px; border: 1px solid #dedede; position: absolute; left: 0; margin-top: 2px; }
 .checkIpt.fileDel input[type="checkbox"] + .text{ padding-left: 20px; padding-right: 0; }
 .checkIpt.fileDel input[type="checkbox"] + .text::before{ margin-top: 0; width: 15px; height: 15px; }
-.checkIpt input[type="checkbox"]:checked + .text::before{ background-image: url('../img/main/applyArti/check_icon.png'); background-size: 100%; background-repeat: no-repeat; background-position: center; }
+.checkIpt input[type="checkbox"]:checked + .text::before{ background-image: url('../img/common/checkbox_icon.png'); background-size: 100%; background-repeat: no-repeat; background-position: center; }
 
 @media screen and (max-width: 900px) {
     .formList.three > li.half{ width: calc(100% / 2); }
