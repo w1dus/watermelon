@@ -190,7 +190,7 @@
 
 
 .formList{ display: flex; flex-wrap: wrap; width: calc(100% + 10px); margin-left: -5px; }
-.formList > li{ padding: 10px 0; width: 100%; }
+.formList > li{ padding: 10px 5px; width: 100%; }
 .formList > li.half{ width: calc(100% / 2); }
 .formList.three > li.half{ width: calc(100% / 3); }
 .formList .label span{ color: #EB5757; }
