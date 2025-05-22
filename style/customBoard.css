@@ -249,3 +249,25 @@ input[type="file"].ipt label input[type="checkbox"]{ display: none;  }
     .checkIpt input[type="checkbox"] + .text::before{ width: 16px; height: 16px; }
     .checkIpt{ margin-top: 5px; }
 }
+
+
+/* 개인정보처리방침 , 이용약관 팝업 */
+.privacyPopup{ 
+	position: fixed; background-color: rgba(0, 0, 0, 0.60); width: 100%; height: 100%; z-index: 99999; left: 0; top: 0; 
+	display: flex; align-items: center; justify-content: center; 
+	opacity: 0; visibility: hidden; transition: opacity 0.5s, visibility 0.5s;
+}
+.privacyPopup.active{ opacity : 1; visibility: visible; }
+.privacyPopup .inner{ max-width: 600px; }
+.privacyPopup .contentWrap{ background-color: #fff; padding: 40px 30px; }
+.privacyPopup .contentWrap .titleBox{ display: flex; justify-content: space-between; align-items: center; }
+.privacyPopup .contentWrap .titleBox span{ font-weight: 600; font-size: 24px;  }
+.privacyPopup .contentWrap .titleBox .closeBtn{ cursor: pointer;  }
+
+.privacyPopup .contentWrap .contentBox{ margin-top: 30px; background-color: #F7F7F7; padding: 30px; max-height: 60vh; overflow-y: scroll; }
+
+@media screen and (max-width: 650px) {
+	.privacyPopup .contentWrap{ padding: 30px 20px; }
+	.privacyPopup .contentWrap .titleBox span{ font-size: 18px; }
+	.privacyPopup .contentWrap .contentBox{ padding: 15px; margin-top: 20px; font-size: 14px; }
+}
