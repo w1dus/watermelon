@@ -138,19 +138,187 @@ p{ word-break: keep-all; }
 
 /* .watermelon .slideSec */
 .watermelon .slideSec{ overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 100px 0 100px 0; position: relative; overflow: hidden; }
-.watermelon .slideSec .gradientDiv{ text-align: center; border-radius: 90px; background: linear-gradient(180deg, rgba(223, 58, 109, 0.00) 0%, #DF3A6D 100%), #42C17B; box-shadow: 21px 24px 31px 0px rgba(0, 0, 0, 0.25); padding: 80px 0 55vh 0; }
+.watermelon .slideSec .gradientDiv{ text-align: center; border-radius: 90px; background: linear-gradient(180deg, rgba(223, 58, 109, 0.00) 0%, #DF3A6D 100%), #42C17B; box-shadow: 21px 24px 31px 0px rgba(0, 0, 0, 0.25); padding: 80px 0 25vw 0; }
 .watermelon .slideSec .gradientDiv .titleBox{ display: flex; align-items: center; justify-content: center; }
 .watermelon .slideSec .gradientDiv .titleBox .title{ max-width: 100%; }
 .watermelon .slideSec .contentBox{ line-height: 1.5em; text-align: center; margin-top: 8px; font-family: "Wavve PADO"; color: #fff; font-size: 32px; font-weight: 400; }
 .watermelon .slideSec .slideBox{ position: absolute; width: 100%; left: 0; bottom: -50px; }
-.watermelon .slideSec .slideBox .imgBox{ border-radius: 20px; border: 4px solid #DF3A6D; height: 64vh; background-repeat: no-repeat; background-position: center; background-size: cover; }
+.watermelon .slideSec .slideBox .imgBox{ border-radius: 20px; border: 4px solid #DF3A6D; height: 30vw; background-repeat: no-repeat; background-position: center; background-size: cover; }
 
+@media screen and (max-width: 1250px) { 
+    .watermelon .slideSec .gradientDiv .titleBox .title{ width: 300px; }
+    .watermelon .slideSec .contentBox{ font-size: 28px; }
+    .watermelon .slideSec .gradientDiv{ padding-bottom: 22vw; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .slideSec .gradientDiv{ padding: 80px 0 39vw 0; }
+    .watermelon .slideSec .slideBox .imgBox{ height: 50vw; }
 
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .slideSec .gradientDiv{ border-radius: 30px; }
+    .watermelon .slideSec .contentBox{ font-size: 4vw; }
+    .watermelon .slideSec .gradientDiv .titleBox .title{ max-width: 200px; }
+    .watermelon .slideSec .slideBox .imgBox{ height: 108vw; max-height: 500px; }
+    .watermelon .slideSec .gradientDiv{ padding-bottom: 77vw; } 
+}
 
+/* .watermelon .sweetSec */
+.watermelon .sweetSec{ padding: 100px 0 50px 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background-image: url('../img/main/sweetSec/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .sweetSec .pinkBox{ font-family: "Wavve PADO"; text-align: center; border-radius: 20px; } 
+.watermelon .sweetSec .pinkBox .pinkBar{  border-radius: 20px 20px 0 0; height: 30px; background-color: #DF3A6D; display: flex; align-items: center; justify-content: center; }
+.watermelon .sweetSec .pinkBox .contentBox{ background-color: #FCE8F1; padding: 100px 20px 50px 20px; border-radius: 0 0 20px 20px; }
+.watermelon .sweetSec .pinkBox .t1{ font-size: 62px; color: var(--red-color); }
+.watermelon .sweetSec .pinkBox .t2{ line-height: 1.5em; margin-top: 5px; font-size: 38px; margin-top: 5px; }
+.watermelon .sweetSec .moBr{ display: none; }
+.watermelon .sweetSec .halfBox{ margin-top: 30px; display: flex; flex-wrap: wrap; width: calc(100% + 20px); margin-left: -10px; }
+.watermelon .sweetSec .halfBox .box{ width: calc(100% / 2); padding: 10px; }
+.watermelon .sweetSec .halfBox .box .imgBox{ border-radius: 4px; overflow: hidden; position: relative; height: 445px; }
+.watermelon .sweetSec .halfBox .box .imgBox .bg{ transition: transform .5s; width: 100%; height: 100%; position: absolute; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .sweetSec .halfBox .box:hover .imgBox .bg{ transform: scale(1.1); }
+.watermelon .sweetSec .halfBox .titleBox{ border-radius: 4px; margin-top: 10px; font-size: 32px; padding: 10px; background-color: var(--red-color); color: #fff; }
 
+@media screen and (max-width: 1250px) { 
+    .watermelon .sweetSec .pinkBox .t1{ font-size: 40px; }
+    .watermelon .sweetSec .pinkBox .t2{ font-size: 30px; }
+    .watermelon .sweetSec .halfBox .box .imgBox{ height: 40vw; }
+    .watermelon .sweetSec .halfBox .titleBox{ font-size: 20px; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .sweetSec .moBr{ display: inline-block; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .sweetSec{ padding: 50px 0; }
+    .watermelon .sweetSec .pinkBox .t1{ font-size: 30px; }
+    .watermelon .sweetSec .pinkBox .t2{ font-size: 20px; }
+    .watermelon .sweetSec .pinkBox .pinkBar .label{ width: 100px; }
+    .watermelon .sweetSec .pinkBox .contentBox{ padding: 50px 20px; }
+    .watermelon .sweetSec .halfBox .box{ width: 100%; }
+    .watermelon .sweetSec .halfBox .box .imgBox{ height: 80vw; }
+    .watermelon .sweetSec .halfBox .titleBox{ font-size: 4vw; }
+}
 
+/* .watermelon .sweetRealSec */
+.watermelon .sweetRealSec{ font-family: "Wavve PADO"; color: #fff; min-height: 100vh; padding: 100px 0; background: linear-gradient(90deg, rgba(34, 34, 34, 0.00) 0%, #222 38.46%, #222 60.58%, rgba(34, 34, 34, 0.00) 100%), #000; }
+.watermelon .sweetRealSec .topBox{ padding-bottom: 25px; border-bottom: 1px solid #fff; display: flex; gap: 39px; }
+.watermelon .sweetRealSec .topBox .imgBox{ flex-shrink: 0; border-radius: 10px; width: 490px; height: 297px; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .sweetRealSec .topBox .contentBox{ flex-grow: 1; position: relative; }
+.watermelon .sweetRealSec .topBox .icon{ position: absolute; right: 0; top: -50px; }
+.watermelon .sweetRealSec .topBox .t1{ font-size: 62px; line-height: 1.25em; }
+.watermelon .sweetRealSec .redColor{ color: #DF3A6D; }
+.watermelon .sweetRealSec .t1{ margin-top: 20px; }
+.watermelon .sweetRealSec .t2{ margin-top: 20px; font-size: 38px; line-height: 1.25em; }
+.watermelon .sweetRealSec .bottomBox{  padding:20px 0; display: flex; align-items: center; gap: 60px; }
+.watermelon .sweetRealSec .bottomBox .imgBox{ background-size: cover; background-repeat: no-repeat; background-position: center; width: 464px; height: 445px; flex-shrink: 0; border-radius: 10px; overflow: hidden; }
+.watermelon .sweetRealSec .bottomBox .contentBox{ flex-grow: 1; }
+.watermelon .sweetRealSec .small{ font-size: .8em; margin-top: 10px; display: block; }
 
+.watermelon .sweetRealSec .squreDiv{ margin-top: 40px; display: flex; gap: 10px;  }
+.watermelon .sweetRealSec .squreDiv .leftBox{ display: flex; flex-direction: column; width: 50%; gap: 10px; }
+.watermelon .sweetRealSec .squreDiv .box{ display: flex; align-items: center; justify-content: center; text-align: center; padding: 7px 20px; font-size: 32px; color: #fff; border: 4px solid #fff; }
+.watermelon .sweetRealSec .squreDiv .box.redColor{ color: var(--red-color); border-color: var(--red-color); }
 
+.watermelon .sweetRealSec .importantDiv{ display: flex; align-items: center; gap: 20px; }
+.watermelon .sweetRealSec .importantDiv .moBr{ display: none; }
+.watermelon .sweetRealSec .importantDiv .text{ word-break: keep-all; font-size: 38px; }
 
+@media screen and (max-width: 1250px) { 
+    .watermelon .sweetRealSec .topBox{ gap: 20px; }
+    .watermelon .sweetRealSec .topBox .t1{ font-size: 50px; }
+    .watermelon .sweetRealSec .t2{ font-size: 30px; }
+    .watermelon .sweetRealSec .squreDiv .box{ font-size: 24px; }
+    .watermelon .sweetRealSec .bottomBox{ gap: 20px; }
+}
+@media screen and (max-width: 1050px) { 
+    .watermelon .sweetRealSec .topBox .imgBox{ width: 390px; height: 283px; }
+    .watermelon .sweetRealSec .bottomBox .imgBox{ width: 398px; height: 294px; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .sweetRealSec .topBox { flex-direction: column; }
+    .watermelon .sweetRealSec .bottomBox{ flex-direction: column; }
+    .watermelon .sweetRealSec .topBox .imgBox{ width: 100%; height: 70vw; }
+    .watermelon .sweetRealSec .bottomBox .imgBox{ width: 100%; height: 70vw; }
+    .watermelon .sweetRealSec .bottomBox .contentBox{ width:100%; order: 1; }
+    .watermelon .sweetRealSec .squreDiv .box.redColor{ flex-grow: 1; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .sweetRealSec { padding: 50px 0; }
+    .watermelon .sweetRealSec .topBox .icon{ width: 40vw; }
+    .watermelon .sweetRealSec .topBox .t1{ font-size: 11vw; }
+    .watermelon .sweetRealSec .t2{ font-size: 6vw; }
+    .watermelon .sweetRealSec .squreDiv .box{ font-size: 4vw; padding: 2vw; border-width: .8vw; }
+    .watermelon .sweetRealSec .importantDiv .icon{ width: 35vw; }
+    .watermelon .sweetRealSec .importantDiv .text{ font-size: 5vw; }
+}
 
+/* .watermelon .startSec */
+.watermelon .startSec{ word-break: keep-all; font-family: "Wavve PADO"; background-image: url('../img/main/startSec/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .startSec .pinkBox{ display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100vh ; padding: 100px 20px; background-image: url('../img/main/startSec/background2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .startSec .pinkBox .title{ color: var(--red-color); font-size: 62px; }
+.watermelon .startSec .pinkBox .content{ line-height: 1.25em; margin-top: 20px; font-size: 38px;  }
+.watermelon .startSec .pinkBox .imgBox{ width: 100%; position: relative; margin-top: 20px; display: flex; justify-content: center; }
+.watermelon .startSec .pinkBox .imgBox .box{ width: 440px; height: 440px; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .startSec .pinkBox .imgBox .icon{ position: absolute; right: 0; bottom: -50px; }
+.watermelon .startSec .pinkBox .content.type2{ margin-top: 40px; line-height: 1.5em; }
+.watermelon .startSec .pinkBox .pinkBg{ margin-top: 20px; display: inline-block; background-color: #DF3A6D; padding: 5px 10px; }
+.watermelon .startSec .pinkBox .pinkBg .content{ color: #fff; margin-top: 0; }
+.watermelon .startSec .pinkBox .date{ margin-top: 20px; font-size: 30px; }
 
+@media screen and (max-width: 1250px) { 
+    .watermelon .startSec .pinkBox .title{ font-size: 40px; }
+    .watermelon .startSec .pinkBox .content{ font-size: 30px; }
+    .watermelon .startSec .pinkBox .date{ font-size: 20px; }
+    .watermelon .startSec .pinkBox .imgBox .box{ width: 40vw; height: 40vw; }
+    .watermelon .startSec .pinkBox .imgBox .icon{ width: 20vw; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .startSec .pinkBox .content br{ display: none; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .startSec .pinkBox{ padding: 50px 0; }
+    .watermelon .startSec .pinkBox .title{ font-size: 30px; }
+    .watermelon .startSec .pinkBox .content{ font-size: 20px; }
+    .watermelon .startSec .pinkBox .content.type2{ font-size: 4vw; }
+    .watermelon .startSec .pinkBox .date{ font-size: 4vw; }
+}
+
+/* .watermelon .growSec */
+.watermelon .growSec{ word-break: keep-all; font-family: "Wavve PADO"; background-image: url('../img/main/growSec/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .growSec .whiteBg{ min-height: 100vh; background-color: #FFF; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 100px 35px; }
+.watermelon .growSec .main_title{ text-align: center; color: var(--red-color); font-size: 62px; }
+.watermelon .growSec .main_title .underline{ background: linear-gradient(to top, rgba(223, 58, 109, .2) 50%, transparent 50%); } 
+.watermelon .growSec .main_content{ margin-top: 40px; text-align: center; margin-top: 10px; font-size: 38px; font-weight: 700; }
+.watermelon .growSec .imgWrap{ width: 100%; margin-top: 30px; display: flex; align-items: center; }
+.watermelon .growSec .imgWrap .imgBox{ max-width: 100%;  background-size: cover; background-repeat: no-repeat; background-position: center; width: 463px; height: 549px; flex-shrink: 0; border: 4px solid #222; border-radius: 10px; }
+.watermelon .growSec .imgWrap .contentBox{ font-family: 'Pretendard', sans-serif; padding: 40px; border: 6px solid var(--red-color); flex-grow: 1; border-left: none; }
+.watermelon .growSec .imgWrap .contentBox .contentWrap + .contentWrap{ margin-top: 40px; }
+.watermelon .growSec .imgWrap .contentBox .title{ font-weight: 700; color: var(--red-color); display: flex; align-items: center; gap: 14px; font-size: 26px; }
+.watermelon .growSec .imgWrap .contentBox .title .icon{ flex-shrink: 0; }
+.watermelon .growSec .imgWrap .contentBox .content{ margin-top: 10px; font-size: 22px; font-weight: 700; line-height: 1.5em; }
+
+@media screen and (max-width: 1250px) { 
+    .watermelon .growSec .main_title{ font-size: 40px; }
+    .watermelon .growSec .main_content{ font-size: 30px; }
+    .watermelon .growSec .imgWrap .imgBox{ width: 380px; height: 500px; }
+    .watermelon .growSec .imgWrap .contentBox .title .icon{ width: 30px; }
+    .watermelon .growSec .imgWrap .contentBox .content{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .growSec .whiteBg{ padding: 50px 10px; }
+    .watermelon .growSec .imgWrap{ flex-direction: column; gap: 30px; }
+    .watermelon .growSec .imgWrap .contentBox{ border: 4px solid #DF3A6D; width: 100%; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .growSec .main_title{ font-size: 5.6vw; }
+    .watermelon .growSec .main_content{ font-size: 4vw; }
+    .watermelon .growSec .imgWrap .contentBox{ padding: 20px; }
+    .watermelon .growSec .imgWrap .contentBox .title{ font-size: 20px; gap: 5px; }
+    .watermelon .growSec .imgWrap .contentBox .content{ font-size: 16px; }
+    .watermelon .growSec .imgWrap .imgBox{ width: 100%; height: 100vw; }
+}
+
+/*  .watermelon  .givenSec */
+.watermelon  .givenSec{ background-image: url('../img/main/givenSec/background.jpg'); background-size: cover; padding: 100px 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.watermelon  .givenSec .title{ text-align: center; color: #fff; font-size: 48px; font-family: "Wavve PADO"; }
+.watermelon  .givenSec .imgBox{ margin-top: 22px; display: flex; background-color: #339550; }
+.watermelon  .givenSec .imgBox .leftBox{ width: 521px; height: 380px; flex-shrink: 0; background-size: cover; background-repeat: no-repeat; background-position: center; }
