@@ -2,7 +2,9 @@
 
 /* 색 설정 */
 :root {
-    --main-color: #CF2E41;
+    --main-color: #DF3A6D;
+    --red-color : #DF3A6D;
+    --green-color : #42C17B; 
     --black-color : #222;
     --white-color : #fff
 }
@@ -16,7 +18,7 @@ html::-webkit-scrollbar {width: 8px;}
 html::-webkit-scrollbar-thumb {background-color: var(--main-color); border-radius: 10px;}
 
 /* 드래그 블록 커스텀 */
-::selection { background-color:var(--main-color); color:#fff; }
+::selection { background-color:var(--green-color); color:#222; }
 
 
 /* default */
@@ -51,5 +53,104 @@ p{ word-break: keep-all; }
 @media screen and (max-width: 650px) { 
     .paging_box{ font-size: 13px; }
 } /* mobile */
+
+
+
+
+
+.watermelon .mainBanner{ text-align: center; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 30px 0; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .mainBanner .borderBox{ display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 65px 20px; position: relative; border: 2px solid #fff; border-radius: 20px; background-color: rgba(0,0,0,0.40); }
+.watermelon .mainBanner .borderBox .icon{ position: absolute; max-width: 80%; left: 10%; }
+.watermelon .mainBanner .icon1{ top: 15%; }
+.watermelon .mainBanner .icon2{ top: 15%; }
+.watermelon .mainBanner .label{ padding: 9px 44px; border: 2px solid #fff; border-radius: 1000px; font-family: 'Wavve PADO'; font-weight: 100; font-size: 23px; }
+.watermelon .mainBanner .title{ font-family: 'Wavve PADO'; position: relative; z-index: 1; }
+.watermelon .mainBanner .title .t1{ margin-top:33px; font-size: 60px; }
+.watermelon .mainBanner .title .t2{ font-size: 120px; }
+.watermelon .mainBanner .red{ color:var(--red-color); }
+.watermelon .mainBanner .green{ color:var(--green-color); }
+.watermelon .mainBanner .bar{ margin: 33px auto; width: 2px; height: 40px; background:#fff; }
+.watermelon .mainBanner .content{ line-height: 1.5em; font-size: 32px; }
+.watermelon .mainBanner .content .big{ margin-top: 5px; font-size: 1.25em; }
+.watermelon .mainBanner .moBr{ display: none; }
+.watermelon .mainBanner .scrolldown_div{ gap: 8px; margin-top: 32px; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.watermelon .mainBanner .scrolldown_div .mouse{ padding: 8px 0; display: flex; align-items: flex-start; justify-content: center; width: 28px; height: 50px; border-radius: 1000px; border: 2px solid #fff;  }
+.watermelon .mainBanner .scrolldown_div .mouse .wheel{ width: 6px; height: 10px; border-radius:1000px; background-color: #fff; }
+
+@media screen and (max-width: 1250px) { 
+    .watermelon .mainBanner .label{ font-size: 4vw; padding: 1vw 4vw; }
+    .watermelon .mainBanner .title .t1{ font-size: 6vw; }
+    .watermelon .mainBanner .title .t2{ font-size: 10vw; }
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .mainBanner .content{ font-size: 24px; }
+    .watermelon .mainBanner .moBr{ display: inline-block; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .mainBanner .icon1{ top: 25%; }
+    .watermelon .mainBanner .icon2{ top: 25%; }
+    .watermelon .mainBanner .bar{ width: 2px; height: 5vh; }
+
+    .watermelon .mainBanner .content{ font-size: 3.5vw; }
+    .watermelon .mainBanner .scrolldown_div .mouse{ padding: 4px 0; width: 20px; height: 32px; }
+}
+
+
+/* .watermelon .projectSec */
+.watermelon .projectSec{ display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 100px 0; border: 35px solid var(--green-color); }
+.watermelon .projectSec .moBr{ display: none; }
+.watermelon .projectSec .title{ font-size: 52px; font-family: "Wavve PADO"; }
+.watermelon .projectSec .title .underline{ border-bottom: 4px solid var(--green-color); }
+.watermelon .projectSec .greenColor{ color: var(--green-color); }
+.watermelon .projectSec .redColor{ color: var(--red-color); }
+.watermelon .projectSec .imgList{ font-family: "Wavve PADO"; flex-wrap: wrap; display: flex; width: calc(100% + 20px); margin-left: -10px; margin-top: 24px; }
+.watermelon .projectSec .imgList > li{ position: relative; display: flex; align-items: flex-end; justify-content: center; width: calc(100% / 2); padding: 10px; }
+.watermelon .projectSec .imgList > li.full{ width: 100%; }
+.watermelon .projectSec .imgList .imgBox{ text-align: center; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: flex-end; flex-direction: column; position: relative; height: 320px; background-color: #222; }
+.watermelon .projectSec .imgList .imgBox .bg{ background-position: center; transition: transform .5s; background-size: cover; background-repeat: no-repeat; position: absolute; left: 0; top: 0; width: 100%; height: 100%;  }
+.watermelon .projectSec .imgList .imgBox:hover .bg{ transform: scale(1.1); }
+.watermelon .projectSec .imgList .textBox{ position: relative; z-index: 1; }
+.watermelon .projectSec .imgList .textBox .blackBg{ border-radius: 10px; line-height: 1.5em; font-size: 24px; color: #fff; background-color: #222; padding: 10px 10px; }
+.watermelon .projectSec .imgList .whiteText{ line-height: 1.5em; position: absolute; z-index: 1; width: 100%; top: 20px; color: #fff; left: 0; font-size: 24px; }
+.watermelon .projectSec .imgList .greenBox{ position: absolute; padding: 10px; color: #fff; line-height: 1.25em; font-size: 30px; background-color: #42C17B; bottom: -20px; }
+
+@media screen and (max-width: 1250px) { 
+    .watermelon .projectSec{ border-width: 10px; }  
+    .watermelon .projectSec .title{ font-size: 35px; }
+    .watermelon .projectSec .imgList .imgBox{ height: 29vw; }
+    .watermelon .projectSec .imgList .textBox .blackBg{ font-size: 18px; }
+    .watermelon .projectSec .imgList .whiteText{ font-size: 18px; }
+    .watermelon .projectSec .imgList .greenBox{ font-size: 18px; }
+    
+}
+@media screen and (max-width: 950px) { 
+    .watermelon .projectSec{ padding: 50px 0; }
+    .watermelon .projectSec .title{ font-size: 18px; }
+    .watermelon .projectSec .imgList > li{ width: 100%; }
+    .watermelon .projectSec .imgList .imgBox{ height: 50vw; }
+
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .projectSec .imgList .textBox .blackBg{ font-size: 4vw; padding: 1vw 2vw; border-radius: 1vw; }
+    .watermelon .projectSec .imgList .whiteText{ top: 2vw; font-size: 4vw; }
+    .watermelon .projectSec .imgList .greenBox{ font-size: 3.8vw; padding: 1vw 2vw; bottom: -3vw; }
+}
+
+/* .watermelon .slideSec */
+.watermelon .slideSec{ overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 100px 0 100px 0; position: relative; overflow: hidden; }
+.watermelon .slideSec .gradientDiv{ text-align: center; border-radius: 90px; background: linear-gradient(180deg, rgba(223, 58, 109, 0.00) 0%, #DF3A6D 100%), #42C17B; box-shadow: 21px 24px 31px 0px rgba(0, 0, 0, 0.25); padding: 80px 0 55vh 0; }
+.watermelon .slideSec .gradientDiv .titleBox{ display: flex; align-items: center; justify-content: center; }
+.watermelon .slideSec .gradientDiv .titleBox .title{ max-width: 100%; }
+.watermelon .slideSec .contentBox{ line-height: 1.5em; text-align: center; margin-top: 8px; font-family: "Wavve PADO"; color: #fff; font-size: 32px; font-weight: 400; }
+.watermelon .slideSec .slideBox{ position: absolute; width: 100%; left: 0; bottom: -50px; }
+.watermelon .slideSec .slideBox .imgBox{ border-radius: 20px; border: 4px solid #DF3A6D; height: 64vh; background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+
+
+
+
+
+
+
 
 
