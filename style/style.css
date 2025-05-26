@@ -322,3 +322,135 @@ p{ word-break: keep-all; }
 .watermelon  .givenSec .title{ text-align: center; color: #fff; font-size: 48px; font-family: "Wavve PADO"; }
 .watermelon  .givenSec .imgBox{ margin-top: 22px; display: flex; background-color: #339550; }
 .watermelon  .givenSec .imgBox .leftBox{ width: 521px; height: 380px; flex-shrink: 0; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon  .givenSec .contentBox{ color: #fff; flex-grow: 1; padding: 50px; }
+.watermelon  .givenSec .contentBox .label{ font-size: 34px; font-weight: 600; }
+.watermelon  .givenSec .contentBox .label .kg{ color: #CEE291; }
+
+.watermelon  .givenSec .contentBox .checkBox{ font-size: 22px; font-weight: 600; margin-top: 22px; display: flex; flex-direction: column; gap: 20px; }
+.watermelon  .givenSec .contentBox .checkBox .item{ display: flex; gap: 10px; }
+.watermelon  .givenSec .contentBox .checkBox .icon{ flex-shrink: 0; }
+
+.watermelon  .givenSec .bottomContent{ text-align: center; position: relative; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 34px; margin-top: 14px; background-color: #339550; }
+.watermelon  .givenSec .bottomContent .bgText{ background-color: #5CAA73; padding: 14px 34px; border-radius: 100px; font-weight: 700; font-size: 26px; }
+.watermelon  .givenSec .bottomContent .content{ margin-top: 10px; line-height: 1.5em; font-weight: 700; font-size: 26px; }
+.watermelon  .givenSec .bottomContent .icon{ position: absolute; }
+.watermelon  .givenSec .bottomContent .icon1{ left: 50px; bottom: -50px; }
+.watermelon  .givenSec .bottomContent .icon2{ right: 50px; bottom: -30px; }
+.watermelon  .givenSec .moBr{ display: none; }
+
+.watermelon  .givenSec .priceDiv{ margin-top: 20px; display: flex; align-items: center; gap: 10px; }
+.watermelon  .givenSec .priceDiv .bgText{ background-color: #5CAA73; padding: 10px 33px; border-radius: 8px; font-size: 21px; font-weight: 700; }
+.watermelon  .givenSec .priceDiv .price{ font-weight: 700; font-size: 64px; }
+.watermelon  .givenSec .priceDiv .info{ font-weight: 700; font-size: 22px; }
+
+@media screen and (max-width: 1250px) { 
+    .watermelon .givenSec .title{ font-size: 30px; }
+    .watermelon .givenSec .imgBox .leftBox{ width: 50%; height: 40vw; }
+    .watermelon .givenSec .contentBox{ padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+    .watermelon .givenSec .contentBox .label{ font-size: 28px; }
+    .watermelon .givenSec .contentBox .checkBox{ font-size: 18px; }
+    .watermelon .givenSec .contentBox .checkBox .icon{ width: 20px; }
+    .watermelon .givenSec .priceDiv .bgText{ font-size: 18px; }
+    .watermelon .givenSec .priceDiv .price{ font-size: 40px; }
+    .watermelon .givenSec .priceDiv .info{ font-size: 18px; }
+
+    .watermelon .givenSec .bottomContent .icon1{ width:20vw; left: -3vw; bottom: -2vw; }
+    .watermelon .givenSec .bottomContent .icon2{ width:20vw; right: -3vw; bottom: -2vw; }
+
+    .watermelon .givenSec .bottomContent .bgText{ font-size: 20px; }
+    .watermelon .givenSec .bottomContent .content{ font-size: 20px; }
+
+}
+@media screen and (max-width: 950px) { 
+    .watermelon  .givenSec .title{ line-height: 1.25em; }
+    .watermelon  .givenSec .moBr{ display: inline-block; }
+
+    .watermelon .givenSec .imgBox{ flex-direction: column; }
+    .watermelon .givenSec .imgBox .leftBox{ width: 100%; height: 70vw; }
+    .watermelon .givenSec .contentBox{ padding: 20px 20px 50px 20px; }
+    .watermelon .givenSec .bottomContent{ padding: 50px 20px 50px 20px; }
+    .watermelon .givenSec .bottomContent .icon1{ width: 100px; left: -20px; bottom: unset; top: -50px; }
+    .watermelon .givenSec .bottomContent .icon2{ bottom: -40px; right: -10px; width: 100px; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .givenSec{ padding: 50px 0; }
+    .watermelon .givenSec .title{ font-size: 6.2vw; }
+
+    .watermelon .givenSec .contentBox .label{ font-size: 24px; }
+    .watermelon .givenSec .contentBox .checkBox{ gap: 10px;  }    
+    
+    .watermelon .givenSec .priceDiv .bgText{ font-size: 14px; padding: 5px 10px; border-radius: 4px; }
+    .watermelon .givenSec .priceDiv .price{ font-size: 30px; }
+    .watermelon .givenSec .priceDiv .info{ font-size: 16px; }
+
+    .watermelon .givenSec .bottomContent .bgText{ padding: 5px 10px; font-size: 4vw; }
+    .watermelon .givenSec .bottomContent .content{ font-size: 16px; word-break: keep-all; }
+    .watermelon .givenSec .bottomContent .content br{ display: none; }
+}
+
+/*  .watermelon  .nowSec */
+.watermelon .nowSec{ background-image: url('../img/main/nowSec/background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.watermelon .nowSec .inner{ padding: 130px 10px; }
+.watermelon .nowSec .bar{ height: 12px; background: linear-gradient(90deg, rgba(255, 165, 193, 0.00) 0%, #FFA5C1 100%), #42C17B; }
+.watermelon .nowSec .title{ text-align: center; font-family: "Wavve PADO"; font-size: 58px; color: #fff;  }
+.watermelon .nowSec .title .red{ color: #DF3A6D; }
+.watermelon .nowSec .white_bar{ margin: 40px auto; width: 2px; height: 40px; background-color: #fff; }
+.watermelon .nowSec .payBtn{ font-size: 20px; font-weight: 700; margin: 0 auto; display: block; width: 100%; max-width: 240px; border-radius: 4px; background-color: var(--green-color); display: flex; align-items: center; justify-content: center; gap: 5px; padding: 10px; color: #fff;  }
+
+@media screen and (max-width: 1250px) { 
+    .watermelon .nowSec .title{ font-size: 40px; }
+    .watermelon .nowSec .payBtn{ font-size: 18px; max-width: 200px; }
+}
+@media screen and (max-width: 650px) { 
+    .watermelon .nowSec .title{ font-size: 10vw; }
+    .watermelon .nowSec .payBtn{ font-size: 16px; }
+}
+
+/*  .watermelon  .farmSec */
+.watermelon .farmSec{ border: 35px solid #FFA5C1; padding: 100px 0; position: relative; overflow: hidden; }
+.watermelon .farmSec .title{ text-align: center; font-family: "Wavve PADO"; line-height: 1.5em; font-size: 52px; }
+.watermelon .farmSec .title .red{ color: var(--red-color); }
+.watermelon .farmSec .imgBox{ position: relative; }
+.watermelon .farmSec .imgList{ display: flex; flex-wrap: wrap; margin-top: 20px; width: calc(100% + 10px); margin-left: -5px; }
+.watermelon .farmSec .imgList > li{ padding: 5px; width:calc(100% / 4) }
+.watermelon .farmSec .imgList .imgBox{ background-size: cover; background-repeat: no-repeat; background-position: center; height:398px; }
+.watermelon .farmSec .textWrapDiv{ margin-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.watermelon .farmSec .textWrapDiv .t1{ font-weight: 700; font-size: 26px; font-weight: 700; }
+.watermelon .farmSec .textWrapDiv .t2{ margin-top: 15px; font-weight: 700; line-height: 1.25em; font-size: 34px; font-weight: 700; }
+.watermelon .farmSec .textWrapDiv .t2 .underline{background: linear-gradient(to top, rgba(255, 82, 136, .2) 50%, transparent 50%);}
+.watermelon .farmSec .textWrapDiv .imgBox{ position: relative; display: flex; align-items: center; justify-content: center; }
+.watermelon .farmSec .textWrapDiv .imgBox .botbox{ position: absolute; bottom: -100px; }
+.watermelon .farmSec .textWrapDiv .textBox2{ font-weight: 700; font-size: 20px; }
+
+.watermelon .farmSec .moreBtn{ color: #fff; background-color: var(--red-color); width: 100%; max-width: 240px; padding: 10px 40px; border-radius: 4px; display: flex; align-items: center; margin: 80px auto 0 auto; gap: 5px; font-size: 20px; font-weight: 700; }
+
+
+@media screen and (max-width: 1250px) {
+    .watermelon .farmSec{ border-width: 10px; }
+    .watermelon .farmSec .title{ font-size: 30px; }
+    .watermelon .farmSec .textWrapDiv .t1{ font-size: 20px; }
+    .watermelon .farmSec .textWrapDiv .t2 .underline{ font-size: 30px; }
+    .watermelon .farmSec .textWrapDiv .imgBox .botbox{ width: 250px; }
+    .watermelon .farmSec .moreBtn{ font-size: 18px; }
+
+    .watermelon .farmSec .imgList .imgBox{ height: 33vw; }
+
+}
+@media screen and (max-width: 950px) {
+    .watermelon .farmSec .textWrapDiv{ align-items: center; justify-content: center; }
+    .watermelon .farmSec .textWrapDiv .imgBox .botbox{ position: static; text-align: center; }
+    .watermelon .farmSec .textWrapDiv .imgBox .botbox{ width: auto; max-width: 100%; }
+    .watermelon .farmSec .textWrapDiv .textBox{ width: 100%; margin-bottom: 30px; } 
+
+    .watermelon .farmSec .imgList > li{ width: calc(100% / 2); }
+    .watermelon .farmSec .imgList .imgBox{ height: 65vw; }
+}
+@media screen and (max-width: 650px) {
+    .watermelon .farmSec{ padding: 50px 0; }
+    .watermelon .farmSec .textWrapDiv .t1{ font-size: 4vw; }
+    .watermelon .farmSec .textWrapDiv .t2{ font-size: 5vw; line-height: 1.5em; }
+    .watermelon .farmSec .textWrapDiv .t2 br{ display: none; }
+    .watermelon .farmSec .textWrapDiv .textBox2{ margin-top: 40px; text-align: center; }
+    .watermelon .farmSec .moreBtn{ font-size: 16px; max-width: 200px; padding: 10px; justify-content: center; }
+}
+
